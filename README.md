@@ -3,6 +3,8 @@ Thank you for getting to this point. This repository was created for a training 
 ## Topics Covered
 - Setting up TestNG in Eclipse for a Java Project
 - @Test Annotation
+- XML File usage (Test Suite > Test Folder (Module/Shell) > Test Case)
+- Prioritizing Test Cases
 
 
 ## Install / Usage Process (My personal setup)
