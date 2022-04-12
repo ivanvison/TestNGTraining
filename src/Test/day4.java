@@ -8,7 +8,7 @@ public class day4 {
 		System.out.println("Activity List is Present");
 	}
 
-	@Test //Second Test case
+	@Test(groups= {"Smoke"}) //Second Test case
 	public void CRMUserProfile() {
 		System.out.println("Reports loaded correctly");
 	}

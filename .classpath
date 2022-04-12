@@ -7,5 +7,16 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/.p2/pool/plugins/org.testng_7.4.0.r202105021533.jar" sourcepath="C:/Users/Ivan/.p2/pool/plugins/org.testng.source_7.4.0.r202105021533.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ivan/Desktop/QA Path/Installers/testng-7.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/.m2/repository/org/testng/testng/7.5/testng-7.5.jar" sourcepath="C:/Users/Ivan/.m2/repository/org/testng/testng/7.5/testng-7.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="7.5"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

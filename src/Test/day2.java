@@ -1,9 +1,16 @@
 package Test;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class day2 {
 
+	@AfterMethod
+	public void AftMeth() {
+		System.out.println("After Every Method XYZ");
+		//Selenium
+	}
+	
 	@Test //Adding test annotation to run test. 
 	public void WebLoginCRMDashboard() {
 		System.out.println("Web Dashboard is present");

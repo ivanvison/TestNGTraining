@@ -3,20 +3,28 @@
 <suite name="CRM Basics">
 	<test name="Login">
 		<classes>
-			<class name="Test.day1"/>
+			<class name="Test.day1">
+				<methods>
+					<!--<include name="WebLoginCRM" />-->
+				</methods>
+			</class>
 			<class name="Test.day2"/>
 		</classes>
-  	</test>
-
-	<test name="ActivityReport">
-		<classes>
-			<class name="Test.day3"/>
-		</classes>
-  	</test>
+	</test>
 
 	<test name="Settings">
 		<classes>
 			<class name="Test.day4"/>
 		</classes>
-  	</test>
+	</test>
+
+	<test name="ActivityReport">
+		<classes>
+			<class name="Test.day3">
+				<methods>
+					<exclude name="Mobile.*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite> <!-- Suite -->

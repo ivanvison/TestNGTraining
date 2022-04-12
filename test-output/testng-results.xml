@@ -1,63 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-11T00:32:02 BOT" name="CRM Basics" finished-at="2022-04-11T00:32:02 BOT" duration-ms="284">
+  <suite started-at="2022-04-11T23:19:50 BOT" name="CRM Basics" finished-at="2022-04-11T23:19:50 BOT" duration-ms="217">
     <groups>
+      <group name="Smoke">
+        <method signature="day1.LoginAPICRM()[pri:0, instance:Test.day1@2dde1bff]" name="LoginAPICRM" class="Test.day1"/>
+        <method signature="day1.WebLoginCRM()[pri:0, instance:Test.day1@2dde1bff]" name="WebLoginCRM" class="Test.day1"/>
+        <method signature="day4.CRMUserProfile()[pri:0, instance:Test.day4@4d465b11]" name="CRMUserProfile" class="Test.day4"/>
+        <method signature="day3.CRMReports()[pri:0, instance:Test.day3@20ccf40b]" name="CRMReports" class="Test.day3"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-04-11T00:32:02 BOT" name="Login" finished-at="2022-04-11T00:32:02 BOT" duration-ms="103">
+    <test started-at="2022-04-11T23:19:50 BOT" name="Login" finished-at="2022-04-11T23:19:50 BOT" duration-ms="76">
       <class name="Test.day1">
-        <test-method signature="LoginAPICRM()[pri:0, instance:Test.day1@524d6d96]" started-at="2022-04-11T00:32:02 BOT" name="LoginAPICRM" finished-at="2022-04-11T00:32:02 BOT" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="preRequisite()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="preRequisite" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preRequisite -->
+        <test-method is-config="true" signature="BefoMeth()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="BefoMeth" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefoMeth -->
+        <test-method signature="LoginAPICRM()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="LoginAPICRM" finished-at="2022-04-11T23:19:50 BOT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPICRM -->
-        <test-method signature="MobileLoginCRM()[pri:0, instance:Test.day1@524d6d96]" started-at="2022-04-11T00:32:02 BOT" name="MobileLoginCRM" finished-at="2022-04-11T00:32:02 BOT" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="BefoMeth()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="BefoMeth" finished-at="2022-04-11T23:19:50 BOT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefoMeth -->
+        <test-method signature="MobileLoginCRM()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="MobileLoginCRM" finished-at="2022-04-11T23:19:50 BOT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileLoginCRM -->
-        <test-method signature="WebLoginCRM()[pri:0, instance:Test.day1@524d6d96]" started-at="2022-04-11T00:32:02 BOT" name="WebLoginCRM" finished-at="2022-04-11T00:32:02 BOT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="BefoMeth()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="BefoMeth" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefoMeth -->
+        <test-method signature="WebLoginCRM()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="WebLoginCRM" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLoginCRM -->
+        <test-method is-config="true" signature="postRequisite()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="postRequisite" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequisite -->
       </class> <!-- Test.day1 -->
       <class name="Test.day2">
-        <test-method signature="LoginAPICRMDashboard()[pri:0, instance:Test.day2@770d3326]" started-at="2022-04-11T00:32:02 BOT" name="LoginAPICRMDashboard" finished-at="2022-04-11T00:32:02 BOT" duration-ms="4" status="PASS">
+        <test-method signature="LoginAPICRMDashboard()[pri:0, instance:Test.day2@223aa2f7]" started-at="2022-04-11T23:19:50 BOT" name="LoginAPICRMDashboard" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPICRMDashboard -->
-        <test-method signature="MobileLoginCRMDashboard()[pri:0, instance:Test.day2@770d3326]" started-at="2022-04-11T00:32:02 BOT" name="MobileLoginCRMDashboard" finished-at="2022-04-11T00:32:02 BOT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="AftMeth()[pri:0, instance:Test.day2@223aa2f7]" started-at="2022-04-11T23:19:50 BOT" name="AftMeth" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AftMeth -->
+        <test-method signature="MobileLoginCRMDashboard()[pri:0, instance:Test.day2@223aa2f7]" started-at="2022-04-11T23:19:50 BOT" name="MobileLoginCRMDashboard" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileLoginCRMDashboard -->
-        <test-method signature="WebLoginCRMDashboard()[pri:0, instance:Test.day2@770d3326]" started-at="2022-04-11T00:32:02 BOT" name="WebLoginCRMDashboard" finished-at="2022-04-11T00:32:02 BOT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="AftMeth()[pri:0, instance:Test.day2@223aa2f7]" started-at="2022-04-11T23:19:50 BOT" name="AftMeth" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AftMeth -->
+        <test-method signature="WebLoginCRMDashboard()[pri:0, instance:Test.day2@223aa2f7]" started-at="2022-04-11T23:19:50 BOT" name="WebLoginCRMDashboard" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLoginCRMDashboard -->
+        <test-method is-config="true" signature="AftMeth()[pri:0, instance:Test.day2@223aa2f7]" started-at="2022-04-11T23:19:50 BOT" name="AftMeth" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AftMeth -->
       </class> <!-- Test.day2 -->
     </test> <!-- Login -->
-    <test started-at="2022-04-11T00:32:02 BOT" name="ActivityReport" finished-at="2022-04-11T00:32:02 BOT" duration-ms="11">
-      <class name="Test.day3">
-        <test-method signature="CRMActivityList()[pri:0, instance:Test.day3@212b5695]" started-at="2022-04-11T00:32:02 BOT" name="CRMActivityList" finished-at="2022-04-11T00:32:02 BOT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CRMActivityList -->
-        <test-method signature="CRMReports()[pri:0, instance:Test.day3@212b5695]" started-at="2022-04-11T00:32:02 BOT" name="CRMReports" finished-at="2022-04-11T00:32:02 BOT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CRMReports -->
-      </class> <!-- Test.day3 -->
-    </test> <!-- ActivityReport -->
-    <test started-at="2022-04-11T00:32:02 BOT" name="Settings" finished-at="2022-04-11T00:32:02 BOT" duration-ms="19">
+    <test started-at="2022-04-11T23:19:50 BOT" name="Settings" finished-at="2022-04-11T23:19:50 BOT" duration-ms="10">
       <class name="Test.day4">
-        <test-method signature="CRMUserList()[pri:0, instance:Test.day4@4de4b452]" started-at="2022-04-11T00:32:02 BOT" name="CRMUserList" finished-at="2022-04-11T00:32:02 BOT" duration-ms="2" status="PASS">
+        <test-method signature="CRMUserList()[pri:0, instance:Test.day4@4d465b11]" started-at="2022-04-11T23:19:50 BOT" name="CRMUserList" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CRMUserList -->
-        <test-method signature="CRMUserProfile()[pri:0, instance:Test.day4@4de4b452]" started-at="2022-04-11T00:32:02 BOT" name="CRMUserProfile" finished-at="2022-04-11T00:32:02 BOT" duration-ms="2" status="PASS">
+        <test-method signature="CRMUserProfile()[pri:0, instance:Test.day4@4d465b11]" started-at="2022-04-11T23:19:50 BOT" name="CRMUserProfile" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CRMUserProfile -->
       </class> <!-- Test.day4 -->
     </test> <!-- Settings -->
+    <test started-at="2022-04-11T23:19:50 BOT" name="ActivityReport" finished-at="2022-04-11T23:19:50 BOT" duration-ms="26">
+      <class name="Test.day1">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:Test.day1@2dde1bff]" started-at="2022-04-11T23:19:50 BOT" name="AfterSuite" finished-at="2022-04-11T23:19:50 BOT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- Test.day1 -->
+      <class name="Test.day3">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="BeforeSuite" finished-at="2022-04-11T23:19:50 BOT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="CRMActivityList()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="CRMActivityList" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CRMActivityList -->
+        <test-method signature="MobileCRMReports()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="MobileCRMReports" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileCRMReports -->
+        <test-method signature="CRMReports()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="CRMReports" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CRMReports -->
+        <test-method signature="MobileCRMContacts()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="MobileCRMContacts" finished-at="2022-04-11T23:19:50 BOT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileCRMContacts -->
+        <test-method signature="MobileCRMSettings()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="MobileCRMSettings" finished-at="2022-04-11T23:19:50 BOT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileCRMSettings -->
+        <test-method signature="MobileCRMGoals()[pri:0, instance:Test.day3@20ccf40b]" started-at="2022-04-11T23:19:50 BOT" name="MobileCRMGoals" finished-at="2022-04-11T23:19:50 BOT" depends-on-methods="Test.day3.CRMActivityList" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileCRMGoals -->
+      </class> <!-- Test.day3 -->
+    </test> <!-- ActivityReport -->
   </suite> <!-- CRM Basics -->
 </testng-results>
