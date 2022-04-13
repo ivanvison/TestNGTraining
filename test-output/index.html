@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CRM_Basics" class="navigator-link">
-              <span class="suite-name border-passed">CRM Basics</span>
+              <span class="suite-name border-failed">CRM Basics</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CRM_Basics" class="hide-methods failed suite-CRM_Basics"> (hide)</a> <!-- hide-methods failed suite-CRM_Basics -->
+                      <a href="#" panel-name="suite-CRM_Basics" class="show-methods failed suite-CRM_Basics"> (show)</a> <!-- show-methods failed suite-CRM_Basics -->
+                    </span>
+                    <div class="method-list-content failed suite-CRM_Basics">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day1" class="method navigator-link" hash-for-method="MobileLoginCRM">MobileLoginCRM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CRM_Basics -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,7 +128,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day4" class="method navigator-link" hash-for-method="CRMUserList">CRMUserList</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day4" class="method navigator-link" hash-for-method="CRMUserList(wrongusername, wrongpassword)">CRMUserList(wrongusername, wrongpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day4" class="method navigator-link" hash-for-method="CRMUserList(firstusername, firstpassword)">CRMUserList(firstusername, firstpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day4" class="method navigator-link" hash-for-method="CRMUserList(goodusername, wrongpassword)">CRMUserList(goodusername, wrongpassword)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,7 +153,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day2" class="method navigator-link" hash-for-method="LoginAPICRMDashboard">LoginAPICRMDashboard</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day2" class="method navigator-link" hash-for-method="LoginAPICRMDashboard(testing.com)">LoginAPICRMDashboard(testing.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,7 +168,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day3" class="method navigator-link" hash-for-method="MobileCRMReports">MobileCRMReports</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day3" class="method navigator-link" hash-for-method="MobileCRMReports(qaclickacademy.com)">MobileCRMReports(qaclickacademy.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,17 +178,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day1" class="method navigator-link" hash-for-method="MobileLoginCRM">MobileLoginCRM</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CRM_Basics" title="Test.day2" class="method navigator-link" hash-for-method="MobileLoginCRMDashboard">MobileLoginCRMDashboard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day1" class="method navigator-link" hash-for-method="WebLoginCRM">WebLoginCRM</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CRM_Basics" title="Test.day1" class="method navigator-link" hash-for-method="WebLoginCRM(testing.com, 1234)">WebLoginCRM(testing.com, 1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -184,28 +203,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CRM_Basics" class="panel CRM_Basics">
-          <div class="suite-CRM_Basics-class-passed">
+          <div class="suite-CRM_Basics-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.day4</span>
+              <img src="failed.png"/>
+              <span class="class-name">Test.day1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CRMUserList">
-                  </a> <!-- CRMUserList -->
-                  <span class="method-name">CRMUserList</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CRMUserProfile">
-                  </a> <!-- CRMUserProfile -->
-                  <span class="method-name">CRMUserProfile</span>
+                  <a name="MobileLoginCRM">
+                  </a> <!-- MobileLoginCRM -->
+                  <span class="method-name">MobileLoginCRM</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Test.day1.MobileLoginCRM(day1.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CRM_Basics-class-passed -->
+          </div> <!-- suite-CRM_Basics-class-failed -->
           <div class="suite-CRM_Basics-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -221,45 +242,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="MobileLoginCRM">
-                  </a> <!-- MobileLoginCRM -->
-                  <span class="method-name">MobileLoginCRM</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="WebLoginCRM">
-                  </a> <!-- WebLoginCRM -->
+                  <a name="WebLoginCRM(testing.com, 1234)">
+                  </a> <!-- WebLoginCRM(testing.com, 1234) -->
                   <span class="method-name">WebLoginCRM</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CRM_Basics-class-passed -->
-          <div class="suite-CRM_Basics-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.day2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginAPICRMDashboard">
-                  </a> <!-- LoginAPICRMDashboard -->
-                  <span class="method-name">LoginAPICRMDashboard</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="MobileLoginCRMDashboard">
-                  </a> <!-- MobileLoginCRMDashboard -->
-                  <span class="method-name">MobileLoginCRMDashboard</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="WebLoginCRMDashboard">
-                  </a> <!-- WebLoginCRMDashboard -->
-                  <span class="method-name">WebLoginCRMDashboard</span>
+                  <span class="parameters">(testing.com, 1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,9 +286,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="MobileCRMReports">
-                  </a> <!-- MobileCRMReports -->
+                  <a name="MobileCRMReports(qaclickacademy.com)">
+                  </a> <!-- MobileCRMReports(qaclickacademy.com) -->
                   <span class="method-name">MobileCRMReports</span>
+                  <span class="parameters">(qaclickacademy.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -310,6 +297,75 @@
                   <a name="MobileCRMSettings">
                   </a> <!-- MobileCRMSettings -->
                   <span class="method-name">MobileCRMSettings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRM_Basics-class-passed -->
+          <div class="suite-CRM_Basics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.day4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CRMUserList(wrongusername, wrongpassword)">
+                  </a> <!-- CRMUserList(wrongusername, wrongpassword) -->
+                  <span class="method-name">CRMUserList</span>
+                  <span class="parameters">(wrongusername, wrongpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CRMUserList(firstusername, firstpassword)">
+                  </a> <!-- CRMUserList(firstusername, firstpassword) -->
+                  <span class="method-name">CRMUserList</span>
+                  <span class="parameters">(firstusername, firstpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CRMUserList(goodusername, wrongpassword)">
+                  </a> <!-- CRMUserList(goodusername, wrongpassword) -->
+                  <span class="method-name">CRMUserList</span>
+                  <span class="parameters">(goodusername, wrongpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CRMUserProfile">
+                  </a> <!-- CRMUserProfile -->
+                  <span class="method-name">CRMUserProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRM_Basics-class-passed -->
+          <div class="suite-CRM_Basics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.day2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginAPICRMDashboard(testing.com)">
+                  </a> <!-- LoginAPICRMDashboard(testing.com) -->
+                  <span class="method-name">LoginAPICRMDashboard</span>
+                  <span class="parameters">(testing.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MobileLoginCRMDashboard">
+                  </a> <!-- MobileLoginCRMDashboard -->
+                  <span class="method-name">MobileLoginCRMDashboard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebLoginCRMDashboard">
+                  </a> <!-- WebLoginCRMDashboard -->
+                  <span class="method-name">WebLoginCRMDashboard</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -323,25 +379,27 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;CRM Basics&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;CRM Basics&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Test.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Login&quot;&gt;
+    &lt;parameter name=&quot;APIKey/username&quot; value=&quot;1234&quot;/&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;testing.com&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.day1&quot;/&gt;
       &lt;class name=&quot;Test.day2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Settings&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Settings&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.day4&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Settings --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ActivityReport&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;ActivityReport&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;qaclickacademy.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test.day3&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Test.day3 --&gt;
+      &lt;class name=&quot;Test.day3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ActivityReport --&gt;
 &lt;/suite&gt; &lt;!-- CRM Basics --&gt;
@@ -407,68 +465,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginAPICRM')
-data.setCell(0, 2, 'Test.day1')
-data.setCell(0, 3, 6);
+data.setCell(0, 1, 'CRMUserList')
+data.setCell(0, 2, 'Test.day4')
+data.setCell(0, 3, 14);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MobileLoginCRM')
-data.setCell(1, 2, 'Test.day1')
-data.setCell(1, 3, 3);
+data.setCell(1, 1, 'CRMUserList')
+data.setCell(1, 2, 'Test.day4')
+data.setCell(1, 3, 10);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'WebLoginCRMDashboard')
-data.setCell(2, 2, 'Test.day2')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'WebLoginCRM')
+data.setCell(2, 2, 'Test.day1')
+data.setCell(2, 3, 9);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'WebLoginCRM')
+data.setCell(3, 1, 'MobileLoginCRM')
 data.setCell(3, 2, 'Test.day1')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 9);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'CRMUserProfile')
-data.setCell(4, 2, 'Test.day4')
-data.setCell(4, 3, 2);
+data.setCell(4, 1, 'LoginAPICRM')
+data.setCell(4, 2, 'Test.day1')
+data.setCell(4, 3, 6);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'MobileCRMGoals')
-data.setCell(5, 2, 'Test.day3')
-data.setCell(5, 3, 2);
+data.setCell(5, 1, 'CRMUserProfile')
+data.setCell(5, 2, 'Test.day4')
+data.setCell(5, 3, 5);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'CRMReports')
 data.setCell(6, 2, 'Test.day3')
-data.setCell(6, 3, 2);
+data.setCell(6, 3, 4);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'MobileCRMReports')
+data.setCell(7, 1, 'MobileCRMContacts')
 data.setCell(7, 2, 'Test.day3')
-data.setCell(7, 3, 2);
+data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'MobileCRMContacts')
-data.setCell(8, 2, 'Test.day3')
+data.setCell(8, 1, 'MobileLoginCRMDashboard')
+data.setCell(8, 2, 'Test.day2')
 data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'MobileLoginCRMDashboard')
+data.setCell(9, 1, 'WebLoginCRMDashboard')
 data.setCell(9, 2, 'Test.day2')
-data.setCell(9, 3, 1);
+data.setCell(9, 3, 2);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'LoginAPICRMDashboard')
 data.setCell(10, 2, 'Test.day2')
-data.setCell(10, 3, 1);
+data.setCell(10, 3, 2);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'CRMUserList')
 data.setCell(11, 2, 'Test.day4')
-data.setCell(11, 3, 1);
+data.setCell(11, 3, 2);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'MobileCRMSettings')
+data.setCell(12, 1, 'MobileCRMGoals')
 data.setCell(12, 2, 'Test.day3')
-data.setCell(12, 3, 1);
+data.setCell(12, 3, 2);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'CRMActivityList')
+data.setCell(13, 1, 'MobileCRMReports')
 data.setCell(13, 2, 'Test.day3')
-data.setCell(13, 3, 1);
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'MobileCRMSettings')
+data.setCell(14, 2, 'Test.day3')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'CRMActivityList')
+data.setCell(15, 2, 'Test.day3')
+data.setCell(15, 3, 1);
 window.suiteTableData['CRM_Basics']= { tableData: data, tableDiv: 'times-div-CRM_Basics'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 ms</span>
+              <span class="suite-total-time">Total running time: 150 ms</span>
               <div id="times-div-CRM_Basics">
               </div> <!-- times-div-CRM_Basics -->
             </div> <!-- times-div -->
@@ -504,110 +570,120 @@ return data;
               <div class="chronological-class-name">Test.day1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">preRequisite</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">BefoMeth</span>
-                <span class="method-start">45 ms</span>
+                <span class="method-start">68 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginAPICRM</span>
-                <span class="method-start">47 ms</span>
+                <span class="method-start">69 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">BefoMeth</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">MobileLoginCRM</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">85 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">BefoMeth</span>
-                <span class="method-start">63 ms</span>
+                <span class="method-start">124 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">WebLoginCRM</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-name">WebLoginCRM(testing.com, 1234)</span>
+                <span class="method-start">126 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.day2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">LoginAPICRMDashboard</span>
-                <span class="method-start">71 ms</span>
+                <span class="method-name">LoginAPICRMDashboard(testing.com)</span>
+                <span class="method-start">147 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AftMeth</span>
-                <span class="method-start">73 ms</span>
+                <span class="method-start">152 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">MobileLoginCRMDashboard</span>
-                <span class="method-start">74 ms</span>
+                <span class="method-start">155 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AftMeth</span>
-                <span class="method-start">79 ms</span>
+                <span class="method-start">159 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">WebLoginCRMDashboard</span>
-                <span class="method-start">81 ms</span>
+                <span class="method-start">161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AftMeth</span>
-                <span class="method-start">85 ms</span>
+                <span class="method-start">167 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.day1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">postRequisite</span>
-                <span class="method-start">86 ms</span>
+                <span class="method-start">170 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.day4</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">CRMUserList</span>
-                <span class="method-start">185 ms</span>
+                <span class="method-name">CRMUserList(firstusername, firstpassword)</span>
+                <span class="method-start">403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CRMUserList(wrongusername, wrongpassword)</span>
+                <span class="method-start">407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CRMUserList(goodusername, wrongpassword)</span>
+                <span class="method-start">420 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CRMUserProfile</span>
-                <span class="method-start">188 ms</span>
+                <span class="method-start">436 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.day3</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CRMActivityList</span>
-                <span class="method-start">205 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">MobileCRMReports</span>
-                <span class="method-start">207 ms</span>
+                <span class="method-start">467 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CRMReports</span>
-                <span class="method-start">211 ms</span>
+                <span class="method-start">470 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MobileCRMContacts</span>
-                <span class="method-start">214 ms</span>
+                <span class="method-start">477 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MobileCRMReports(qaclickacademy.com)</span>
+                <span class="method-start">486 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MobileCRMSettings</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">506 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MobileCRMGoals</span>
-                <span class="method-start">225 ms</span>
+                <span class="method-start">523 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.day1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">AfterSuite</span>
-                <span class="method-start">237 ms</span>
+                <span class="method-start">537 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

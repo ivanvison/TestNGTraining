@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [CRM Basics]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Test.Listeners"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="Login(failed)">
+    <parameter name="APIKey/username" value="1234"/>
+    <parameter name="URL" value="testing.com"/>
+    <classes>
+      <class name="Test.day1">
+        <methods>
+          <include name="postRequisite"/>
+          <include name="AfterSuite"/>
+          <include name="preRequisite"/>
+          <include name="BefoMeth"/>
+          <include name="MobileLoginCRM"/>
+        </methods>
+      </class> <!-- Test.day1 -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [CRM Basics] -->

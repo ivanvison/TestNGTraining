@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="CRM Basics">
+<suite name="CRM Basics" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="Test.Listeners" />
+	</listeners>
+
 	<test name="Login">
+		<parameter name="URL" value="testing.com"/>
+		<parameter name="APIKey/username" value="1234"/>
 		<classes>
 			<class name="Test.day1">
 				<methods>
@@ -19,10 +25,11 @@
 	</test>
 
 	<test name="ActivityReport">
+		<parameter name="URL" value="qaclickacademy.com"/>
 		<classes>
 			<class name="Test.day3">
 				<methods>
-					<exclude name="Mobile.*" />
+					<!--<exclude name="Mobile.*" />-->
 				</methods>
 			</class>
 		</classes>

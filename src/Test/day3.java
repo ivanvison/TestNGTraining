@@ -2,6 +2,7 @@ package Test;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 public class day3 {
 	@Test //Adding test annotation to run test. 
@@ -14,9 +15,11 @@ public class day3 {
 		System.out.println("Reports loaded correctly");
 	}
 	
+	@Parameters({"URL"})
 	@Test 
-	public void MobileCRMReports() {
-		System.out.println("Mobile Rep 1");
+	public void MobileCRMReports(String urlname) {
+		
+		System.out.println("Mobile Rep 1 " + urlname);
 	}
 
 	@BeforeSuite

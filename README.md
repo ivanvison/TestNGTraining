@@ -14,10 +14,17 @@ Thank you for getting to this point. This repository was created for a training 
 - Executing test cases at Package level with regex (Example: Mobile.*)
 - Naming Conventions
 - Groups
-- Helper Attibutes
+- Helper Attributes
 	- dependsOnMethods={""} 
 	- (enabled=false) - Skips test cases fails
 	- (timeOut=4000) - wait until fail.
+- Parameterising from TestNG XMKL File (Example: Global Environment Variables, like a Base URL)
+- Data Providers Annotations
+	- Data Sets
+- Listeners Interfaces
+- Parallel Testing
+- Generating Reports
+
 
 
 ## Install / Usage Process (My personal setup)

@@ -1,6 +1,7 @@
 package Test;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class day2 {
@@ -23,10 +24,11 @@ public class day2 {
 		//Appium 
 	}
 	
+	@Parameters({"URL"})
 	@Test //Third Test case
-	public void LoginAPICRMDashboard() {
+	public void LoginAPICRMDashboard(String urltest2) {
 		//Rest API Automation
-		System.out.println("API In Dashboard");
+		System.out.println("API In Dashboard " + urltest2);
 	}
 
 }
